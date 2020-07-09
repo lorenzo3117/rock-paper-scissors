@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock, paper, scissors</h1>
+    <article>
+        <div id="result-container">
+            <button id="close-button" >&times;</button>
+            <p id="result-paragraph"></p>
+        </div>
+        <div id="overlay"></div>
+
+        <form novalidate id="playerChoice">
+            <div id="form-container">
+                <label for="rock" tabindex="1"><img src="assets/rock.png" alt="rock"><p></p>Rock</p></label>
+                <input type="button" id="rock" value="0" onclick="play(this)">
+                
+                <label for="paper" tabindex="2"><img src="assets/paper.png" alt="paper"><p>Paper</p></label>
+                <input type="button" id="paper" value="1" onclick="play(this)">
+                
+                <label for="scissors" tabindex="3"><img src="assets/scissors.png" alt="scissors"><p>Scissors</p></label>
+                <input type="button" id="scissors" value="2" onclick="play(this)">
+            </div>
+        </form>
+
+        <h2 id="score"></h2>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
